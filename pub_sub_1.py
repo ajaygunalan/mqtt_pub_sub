@@ -5,7 +5,7 @@ import random
 #log_filename2="test2.log"
 
 
-MQTT_SERVER = "localhost"
+MQTT_SERVER = "192.168.43.35"
 MQTT_PATH_1 = "test_channel_1"
 MQTT_PATH_2 = "test_channel_2"
 

@@ -16,8 +16,15 @@ Channel 1 = Client-Broker-Client (For Sending Data form PC to RPI3)
 
 Channel 2 = Client-Broker-Cleint (For Receveing Data form RPI3 to PC)
 
+## To steup the commuincations
 
-## To Setup the Communication:
+1. Connect both of the system in same wifi netwrok. (first two digits should be the same)
+2. Put the IP address in MQTT_SERVER of ''' pub_sub_1.py ''' and ''' pub_sub_2.py ''' 
+3. Run ''' python pub_sub_2.py ''' on PC
+4. Run ''' python pub_sub_1.py ''' on RPI3
+
+
+## Additional Notes
 
  1. Check the IP of the Broker/server through ifconfig and store it.
  2. Define the on_connect and on_message callbacks.
