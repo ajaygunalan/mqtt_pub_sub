@@ -14,8 +14,7 @@ The code consist of two clients, on each side and one broker, thus two different
 
 Channel 1 = Client-Broker-Client (For Sending Data form PC to RPI3)
 
-
-Channel 2 = Client-Broker-Cleint (For Receveing Data form PC to RPI3)
+Channel 2 = Client-Broker-Cleint (For Receveing Data form RPI3 to PC)
 
 
 ## To Setup the Communication:
