@@ -9,9 +9,14 @@
     sudo -H pip install paho-mqtt
     sudo pip3 install paho-mqtt
 
-In this system we will be using: One broker, and  two clients, on each side and two different channels.
+The setup consist of two clients, on each side and one broker, thus totally two different channel.
 
-## Steps to setup the communications:
+
+Channel 1 = Client-Broker-Client (For Sending Data form PC to RPI3)
+Channel 2 = Client-Broker-Cleint (For Receveing Data form PC to RPI3)
+
+
+## To Setup the Communication:
 
  1. Check the IP of the Broker/server through ifconfig and store it.
  2. Define the on_connect and on_message callbacks.
