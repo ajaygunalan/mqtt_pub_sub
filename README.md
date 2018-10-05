@@ -14,14 +14,15 @@ The code consist of two clients, on each side and one broker, thus two different
 
 Channel 1 = Client-Broker-Client (For Sending Data form PC to RPI3)
 
-Channel 2 = Client-Broker-Cleint (For Receveing Data form RPI3 to PC)
+Channel 2 = Client-Broker-Client (For Receveing Data form RPI3 to PC)
 
-## To steup the commuincations
+## To setup the commuincations
 
-1. Connect both of the system in same wifi netwrok. (first two digits should be the same)
-2. Put the IP address in MQTT_SERVER of ''' pub_sub_1.py ''' and ''' pub_sub_2.py ''' 
-3. Run ''' python pub_sub_2.py ''' on PC
-4. Run ''' python pub_sub_1.py ''' on RPI3
+1. Connect both of the system in same wifi network. (first two digits should be the same)
+2. Check the ip address of one of the system by `ifconfig`
+2. Put the ip address in `MQTT_SERVER=<ip-address>` of `pub_sub_1.py` and `pub_sub_2.py` 
+3. Run `python pub_sub_2.py` on PC
+4. Run `python pub_sub_1.py` on RPI3
 
 
 ## Additional Notes
@@ -30,7 +31,7 @@ Channel 2 = Client-Broker-Cleint (For Receveing Data form RPI3 to PC)
  2. Define the on_connect and on_message callbacks.
  3. Initialize the new instance of the Client class.
  4. Define the on_connect and on_message object of the client class with the callbacks defined above.
- 5. Establish the connection to the Broker with broker's IP, port no.(usually 1883) and stayawake time(Default=60).
+ 5. Establish the connection to the Broker with broker's IP, port no.(usually 1883) and stay awake time(Default=60).
  6. Start the loop.
  7. Then start publishing the message through one of the client over one of the topics.
 
