@@ -9,10 +9,12 @@
     sudo -H pip install paho-mqtt
     sudo pip3 install paho-mqtt
 
-The setup consist of two clients, on each side and one broker, thus totally two different channel.
+The code consist of two clients, on each side and one broker, thus two different channel.
 
 
 Channel 1 = Client-Broker-Client (For Sending Data form PC to RPI3)
+
+
 Channel 2 = Client-Broker-Cleint (For Receveing Data form PC to RPI3)
 
 
